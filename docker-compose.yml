@@ -73,6 +73,7 @@ services:
     volumes:
       - ./logstash/config/logstash.yml:/usr/share/logstash/config/logstash.yml:ro,Z
       - ./logstash/pipeline:/usr/share/logstash/pipeline:ro,Z
+      - ./logstash/config/mariadb-java-client-3.5.1.jar:/usr/share/logstash/config/mariadb-java-client-3.5.1.jar:ro,Z
     ports:
       - 5044:5044
       - 50000:50000/tcp
